@@ -129,6 +129,17 @@ header nav ul li a {
     margin: 10px 0;
 }
 
+.project a {
+    color: #007bff;  /* Link color */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;  /* Optional: make link bold */
+}
+
+.project a:hover {
+    text-decoration: underline;  /* Optional: add underline on hover */
+    color: #0056b3;  /* Optional: change color on hover */
+}
+
 /* Contact Section */
 #contact {
     padding: 50px 0;
