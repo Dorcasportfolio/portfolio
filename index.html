@@ -103,11 +103,50 @@
             </form>
         </div>
     </section>
+    <!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init('user_zKEl6FEgORI4kgRop'); // Get your User ID from EmailJS
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_8291nn', 'template_ci5low9', this)
+                .then(function(response) {
+                    console.log('Success:', response);
+                    alert('Message sent successfully!');
+                }, function(error) {
+                    console.log('Error:', error);
+                    alert('Oops, something went wrong. Please try again.');
+                });
+        });
+    })();
+</script>
+
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2025 Dorcas | All Rights Reserved</p>
+            <p>© 2025 Dorcas Osawaru | All Rights Reserved</p>
             <div class="social">
  <a href="https://www.linkedin.com/in/docasosawaru" target="_blank">
     <i class="fab fa-linkedin"></i>
