@@ -52,53 +52,61 @@ header nav ul li a {
     font-size: 18px;
 }
 /* Home section */
-
 #home {
-   background: #77A6F7;
+    background: #77A6F7;
     color: #fff;
     padding: 100px 0;
-}
-#home .home-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* mobile responsive */
-    gap: 2rem;
+    text-align: center;
 }
 
-#home .home-text {
-    flex: 1;
-    min-width: 280px;
+#home h2 {
+    font-size: 40px;
 }
+
 #home .btn {
     background: #fff;
     color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
     font-size: 18px;
     margin-top: 20px;
-    border-radius: 5px;
-    paddding: 10px 20px;
     display: inline-block;
     border-radius: 5px;
 }
+
 #home .btn:hover {
     background: #333;
     color: #fff;
 }
+.home-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: left; /* keeps original look on text */
+}
+
+.home-text {
+  flex: 1;
+  min-width: 280px;
+}
+
 .home-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .home-image img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #0077b5; /* Optional: adds border color */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 
 
 /* About Section */
