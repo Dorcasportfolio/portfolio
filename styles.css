@@ -53,6 +53,8 @@ header nav ul li a {
 }
 /* Home section */
 .home-flex {
+    backround: #77A6f7;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
