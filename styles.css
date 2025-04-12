@@ -179,9 +179,18 @@ footer {
 }
 
 footer .social a {
-    color: #77A6F7;
     text-decoration: none;
-    margin: 0 10px;
+    color: #0077b5;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
+
+a i {
+    font-size: 1.2rem;
+}
+
+
 
 
