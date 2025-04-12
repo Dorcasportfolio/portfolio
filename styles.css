@@ -51,34 +51,36 @@ header nav ul li a {
     text-decoration: none;
     font-size: 18px;
 }
-
-/* Home Section */
-#home {
-    background: #77A6F7;
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
+/* Home section */
+.home-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* mobile responsive */
+    gap: 2rem;
 }
 
-#home h2 {
-    font-size: 40px;
+.home-text {
+    flex: 1;
+    min-width: 280px;
 }
 
-#home .btn {
-    background: #fff;
-    color: #333;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    margin-top: 20px;
-    display: inline-block;
-    border-radius: 5px;
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#home .btn:hover {
-    background: #333;
-    color: #fff;
+.home-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #0077b5; /* Optional: adds border color */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+
 
 /* About Section */
 #about {
