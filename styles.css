@@ -52,9 +52,13 @@ header nav ul li a {
     font-size: 18px;
 }
 /* Home section */
-.home-flex {
-    backround: #77A6f7;
+
+#home {
+   background: #77A6F7;
     color: #fff;
+    padding: 100px 0;
+}
+.home-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
