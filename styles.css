@@ -181,7 +181,7 @@ footer {
 footer .social-icons {
     display: flex;
     gap: 15px;
-    justify-content: start; /* or center */
+    justify-content: start;
     margin-top: 20px;
 }
 
@@ -192,8 +192,9 @@ footer .social-icons {
 }
 
 .social-icons a:hover {
-    color: #0077b5; /* Or change for each icon if you want different colors */
+    color: #0077b5;
 }
+
 
    
 
