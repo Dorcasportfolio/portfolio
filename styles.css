@@ -178,15 +178,23 @@ footer {
     text-align: center;
 }
 
-footer .social a {
-    color: #0077b5;
+footer .social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: start; /* or center */
+    margin-top: 20px;
+}
+
+.social-icons a {
     font-size: 1.5rem;
+    color: #333;
     transition: color 0.3s ease;
 }
 
-a:hover {
-    color: #005582; /* Darker blue on hover */
+.social-icons a:hover {
+    color: #0077b5; /* Or change for each icon if you want different colors */
 }
+
    
 
 
